@@ -1,0 +1,94 @@
+/* Reset lại một vài thuộc tính */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    margin: auto;
+    width: 1226px;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+ol, ul { list-style: none; }
+
+img { border: none; vertical-align: top; }
+
+/* Nội dung layout */
+header, footer, #content, aside, .item-list li {
+    text-align: center;
+}
+.item-list li {
+    width: 100%;
+}
+header {
+    background-color: #92dfc8;
+    height: 80px;
+}
+header div.header {
+    background-color: #4548da;
+    height: auto;
+    width: auto;
+}
+div.logo {
+    float: left;
+    margin-left: 20px;
+}
+header div.header img {
+    height: 22px;
+    width: 22px;
+}
+header div.info {
+    background-color: #9e0e9e;
+    height: 60%;
+    width: auto;
+}
+header div.navigation {
+    background-color: #0e9e3e;
+    height: 35%;
+    width: auto;
+}
+main {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+}
+.item-list li {
+    background-color: #f2f1ca;
+    height: 100px;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 350px;
+}
+.item-list li:nth-child(3n) {
+    margin-right: 0;
+}
+.item-list li:last-child, .maylike-list li:last-child {
+    margin-right: 0;
+}
+.maylike-list li {
+    background-color: #f2f1ca;
+    height: 250px;
+    text-align: center;
+    margin-right: 80px;
+    margin-bottom: 10px;
+    width: 350px;
+}
+footer {
+    background-color: #eecbf3;
+    height: 80px;
+    line-height: 80px;
+}
