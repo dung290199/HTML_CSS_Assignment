@@ -5,24 +5,28 @@
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
         <link rel="stylesheet" type="text/css" href="css.css"/>
+
         <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
 
         <title>HTML-CSS Asignment</title>
     </head>
     <body>
-        <header class="header link-style link-style link-style--big">
-            <div class="header__logo">
+        <header class="header link-style link-style--big">
+            <div class="logo">
                 <img src="./images/logo.svg" alt=""/>
             </div>
-            <div class="header__search-field">
-                <div class="header__search">
-                    <div class="header__search__dropdown">
+            <div class="search-field">
+                <div class="search-box">
+                    <div class="search-box__dropdown">
                         <img src="./images/image 20.png" alt=""/>
-                        <img class="dropdown-btn" src="./images/down-arrow.png" alt=""/>
-                        <span class="header__search__dropdown__content">
+                        <img class="dropdown__btn" src="./images/down-arrow.png" alt=""/>
+                        <span class="dropdown__content">
                             <a href="#">
                                 <img src="./images/cake.png" alt=""/>
                             </a>
@@ -32,41 +36,42 @@
                         </span>
                     </div>
                     <input type="text" placeholder="What are you looking for?"/>
+                    <i class="fas fa-search"></i>
                 </div>
-                <span class="search-btn-border">
-                    <input class="header__search__btn" type="button" value="Search">
-                </span>
+                <div class="search-btn">
+                    <input type="button" value="Search">
+                </div>
             </div>
-            <div class="header__sign-in">
+            <div class="sign-in">
                 <a href="#">Sign in</a>
             </div>
         </header>
     <div class="info">
-        <div class="info__img">
+        <div>
             <img src="./images/Rectangle 12.jpg" alt=""/>
         </div>
-        <div class="info__content">
-            <div class="info__description title-style">
-                <span>Bussiness Name</span>
-                <span class="title-style--medium title-style--blue">
-                    <i class="star-icon fas fa-star"></i> 
+        <div>
+            <div class="info__title text-title">
+                <p>Bussiness Name</p>
+                <p class="text-title--medium text-title--blue">
+                    <i class="fas fa-star"></i> 
                     4.5(2)
-                </span>
+                </p>
             </div>
-            <div class="info__content__detail text-content text-content--big">
+            <p class="info__description text-content text-content--big">
                 Vel non enim in. Nemo sapiente rerum quasi eaque quia non. Et fugiat dolores harum quos voluptas dolorum omnis minus. Provident consequatur eveniet labore quia iure ipsa fugit nemo. Modi qui ratione incidunt voluptatem eveniet laboriosam ipsum rerum. 
-            </div>
-            <div class="info__content__contact">
-                <div class="info__account">
-                    <img class="info__avatar" src="./images/image 11.png" alt=""/>
-                    <p class="title-style">Jane Doe</p>
+            </p>
+            <div class="info__contact">
+                <div class="contact__account">
+                    <img src="./images/image 11.png" alt=""/>
+                    <p class="text-title">Jane Doe</p>
                 </div>
                 <div class="contact__detail">
-                    <i class="info__icon fas fa-map-marker-alt"></i>
+                    <i class="fas fa-map-marker-alt"></i>
                     <p class="text-content--big">1 James Street</p>
                 </div>
                 <div class="contact__detail">
-                    <i class="info__icon far fa-clock"></i>
+                    <i class="far fa-clock"></i>
                     <p class="text-content--big">Today10am - 6pm</p>
                 </div>
                 <button class="btn-message text-content--big">Message Business</button>
@@ -117,18 +122,18 @@
     </div>
     <main>
         <div class="main__item">
-            <span class="title-style">Popular</span>
+            <h3 class="text-title">Popular</h3>
             <ul class="grid-container">
                 <li class="grid-item">
                     <div>
                         <img src="./images/Rectangle 13 (2).png" alt=""/>
                     </div>
                     <div class="item-content">
-                        <div class="item__header title-style title-style--small">
+                        <div class="item__header text-title text-title--small">
                             <p>
                                 Lorem Ipsum Sit
                             </p>
-                            <p class="title-style--blue">$9.53</p>
+                            <p class="text-title--blue">$9.53</p>
                         </div>
                         <div class="text-content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit  dolor sit adipiscing elit.
@@ -140,11 +145,11 @@
                         <img src="./images/Rectangle 13 (1).png" alt=""/>
                     </div>
                     <div class="item-content">
-                        <div class="item__header title-style title-style--small">
+                        <div class="item__header text-title text-title--small">
                             <p>
                                 Lorem Ipsum Sit
                             </p>
-                            <p class="title-style--blue">$9.53</p>
+                            <p class="text-title--blue">$9.53</p>
                         </div>
                         <div class="text-content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit  dolor sit adipiscing elit.
@@ -156,11 +161,11 @@
                         <img src="./images/Rectangle 13.png" alt=""/>
                     </div>
                     <div class="item-content">
-                        <div class="item__header title-style title-style--small">
+                        <div class="item__header text-title text-title--small">
                             <p>
                                 Lorem Ipsum Sit
                             </p>
-                            <p class="title-style--blue">$9.53</p>
+                            <p class="text-title--blue">$9.53</p>
                         </div>
                         <div class="text-content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit  dolor sit adipiscing elit.
@@ -172,11 +177,11 @@
                         <img src="./images/Rectangle 13 (2).png" alt=""/>
                     </div>
                     <div class="item-content">
-                        <div class="item__header title-style title-style--small">
+                        <div class="item__header text-title text-title--small">
                             <p>
                                 Lorem Ipsum Sit
                             </p>
-                            <p class="title-style--blue">$9.53</p>
+                            <p class="text-title--blue">$9.53</p>
                         </div>
                         <div class="text-content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit  dolor sit adipiscing elit.
@@ -188,11 +193,11 @@
                         <img src="./images/Rectangle 13 (1).png" alt=""/>
                     </div>
                     <div class="item-content">
-                        <div class="item__header title-style title-style--small">
+                        <div class="item__header text-title text-title--small">
                             <p>
                                 Lorem Ipsum Sit
                             </p>
-                            <p class="title-style--blue">$9.53</p>
+                            <p class="text-title--blue">$9.53</p>
                         </div>
                         <div class="text-content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit  dolor sit adipiscing elit.
@@ -204,11 +209,11 @@
                         <img src="./images/Rectangle 13.png" alt=""/>
                     </div>
                     <div class="item-content">
-                        <div class="item__header title-style title-style--small">
+                        <div class="item__header text-title text-title--small">
                             <p>
                                 Lorem Ipsum Sit
                             </p>
-                            <p class="title-style--blue">$9.53</p>
+                            <p class="text-title--blue">$9.53</p>
                         </div>
                         <div class="text-content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit  dolor sit adipiscing elit.
@@ -218,18 +223,18 @@
             </ul>   
         </div>
         <div class="main__item">
-            <span class="title-style">Category 1</span>
+            <h3 class="text-title">Category 1</h3>
             <ul class="grid-container">
                 <li class="grid-item">
                     <div>
                         <img src="./images/Rectangle 13 (3).png" alt=""/>
                     </div>
                     <div class="item-content">
-                        <div class="item__header title-style title-style--small">
+                        <div class="item__header text-title text-title--small">
                             <p>
                                 Lorem Ipsum Sit
                             </p>
-                            <p class="title-style--blue">$9.53</p>
+                            <p class="text-title--blue">$9.53</p>
                         </div>
                         <div class="text-content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit  dolor sit adipiscing elit.
@@ -241,11 +246,11 @@
                         <img src="./images/Rectangle 13 (5).png" alt=""/>
                     </div>
                     <div class="item-content">
-                        <div class="item__header title-style title-style--small">
+                        <div class="item__header text-title text-title--small">
                             <p>
                                 Lorem Ipsum Sit
                             </p>
-                            <p class="title-style--blue">$9.53</p>
+                            <p class="text-title--blue">$9.53</p>
                         </div>
                         <div class="text-content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit  dolor sit adipiscing elit.
@@ -257,11 +262,11 @@
                         <img src="./images/Rectangle 13 (7).png" alt=""/>
                     </div>
                     <div class="item-content">
-                        <div class="item__header title-style title-style--small">
+                        <div class="item__header text-title text-title--small">
                             <p>
                                 Lorem Ipsum Sit
                             </p>
-                            <p class="title-style--blue">$9.53</p>
+                            <p class="text-title--blue">$9.53</p>
                         </div>
                         <div class="text-content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit  dolor sit adipiscing elit.
@@ -273,11 +278,11 @@
                         <img src="./images/Rectangle 13 (4).png" alt=""/>
                     </div>
                     <div class="item-content">
-                        <div class="item__header title-style title-style--small">
+                        <div class="item__header text-title text-title--small">
                             <p>
                                 Lorem Ipsum Sit
                             </p>
-                            <p class="title-style--blue">$9.53</p>
+                            <p class="text-title--blue">$9.53</p>
                         </div>
                         <div class="text-content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit  dolor sit adipiscing elit.
@@ -289,11 +294,11 @@
                         <img src="./images/Rectangle 13 (6).png" alt=""/>
                     </div>
                     <div class="item-content">
-                        <div class="item__header title-style title-style--small">
+                        <div class="item__header text-title text-title--small">
                             <p>
                                 Lorem Ipsum Sit
                             </p>
-                            <p class="title-style--blue">$9.53</p>
+                            <p class="text-title--blue">$9.53</p>
                         </div>
                         <div class="text-content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit  dolor sit adipiscing elit.
@@ -305,11 +310,11 @@
                         <img src="./images/Rectangle 13 (8).png" alt=""/>
                     </div>
                     <div class="item-content">
-                        <div class="item__header title-style title-style--small">
+                        <div class="item__header text-title text-title--small">
                             <p>
                                 Lorem Ipsum Sit
                             </p>
-                            <p class="title-style--blue">$9.53</p>
+                            <p class="text-title--blue">$9.53</p>
                         </div>
                         <div class="text-content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit  dolor sit adipiscing elit.
@@ -319,18 +324,18 @@
             </ul>   
         </div>
         <div class="main__item">
-            <span class="title-style">Category 2</span>
+            <h3 class="text-title">Category 2</h3>
             <ul class="grid-container">
                 <li class="grid-item">
                     <div>
                         <img src="./images/Rectangle 13 (9).png" alt=""/>
                     </div>
                     <div class="item-content">
-                        <div class="item__header title-style title-style--small">
+                        <div class="item__header text-title text-title--small">
                             <p>
                                 Lorem Ipsum Sit
                             </p>
-                            <p class="title-style--blue">$9.53</p>
+                            <p class="text-title--blue">$9.53</p>
                         </div>
                         <div class="text-content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit  dolor sit adipiscing elit.
@@ -342,11 +347,11 @@
                         <img src="./images/Rectangle 13 (11).png" alt=""/>
                     </div>
                     <div class="item-content">
-                        <div class="item__header title-style title-style--small">
+                        <div class="item__header text-title text-title--small">
                             <p>
                                 Lorem Ipsum Sit
                             </p>
-                            <p class="title-style--blue">$9.53</p>
+                            <p class="text-title--blue">$9.53</p>
                         </div>
                         <div class="text-content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit  dolor sit adipiscing elit.
@@ -358,11 +363,11 @@
                         <img src="./images/Rectangle 13 (13).png" alt=""/>
                     </div>
                     <div class="item-content">
-                        <div class="item__header title-style title-style--small">
+                        <div class="item__header text-title text-title--small">
                             <p>
                                 Lorem Ipsum Sit
                             </p>
-                            <p class="title-style--blue">$9.53</p>
+                            <p class="text-title--blue">$9.53</p>
                         </div>
                         <div class="text-content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit  dolor sit adipiscing elit.
@@ -374,11 +379,11 @@
                         <img src="./images/Rectangle 13 (10).png" alt=""/>
                     </div>
                     <div class="item-content">
-                        <div class="item__header title-style title-style--small">
+                        <div class="item__header text-title text-title--small">
                             <p>
                                 Lorem Ipsum Sit
                             </p>
-                            <p class="title-style--blue">$9.53</p>
+                            <p class="text-title--blue">$9.53</p>
                         </div>
                         <div class="text-content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit  dolor sit adipiscing elit.
@@ -390,11 +395,11 @@
                         <img src="./images/Rectangle 13 (12).png" alt=""/>
                     </div>
                     <div class="item-content">
-                        <div class="item__header title-style title-style--small">
+                        <div class="item__header text-title text-title--small">
                             <p>
                                 Lorem Ipsum Sit
                             </p>
-                            <p class="title-style--blue">$9.53</p>
+                            <p class="text-title--blue">$9.53</p>
                         </div>
                         <div class="text-content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit  dolor sit adipiscing elit.
@@ -406,11 +411,11 @@
                         <img src="./images/Rectangle 13 (14).png" alt=""/>
                     </div>
                     <div class="item-content">
-                        <div class="item__header title-style title-style--small">
+                        <div class="item__header text-title text-title--small">
                             <p>
                                 Lorem Ipsum Sit
                             </p>
-                            <p class="title-style--blue">$9.53</p>
+                            <p class="text-title--blue">$9.53</p>
                         </div>
                         <div class="text-content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit  dolor sit adipiscing elit.
@@ -419,14 +424,14 @@
                 </li>
             </ul>   
         </div>
-        <div class="reviews main__item">
-            <span class="title-style">Reviews</span>
+        <div class="reviews main__item text-content">
+            <h3 class="text-title">Reviews</h3>
             <ul class="grid-container">
                 <li class="grid-item">
                     <div class="reviews__header">
                         <div class="reviews__header__left">
                             <img src="./images/Ellipse 1.png" alt=""/>
-                            <div class="text-content">
+                            <div>
                                 <span class="text-content--bold">Username</span>
                                 <br/>
                                 <span class="text-content--small">Oct. 28, 2020</span>
@@ -440,7 +445,7 @@
                             <img src="./images/Vector (1).png" alt=""/>
                         </div>
                     </div>
-                    <span class="reviews__content text-content">
+                    <span class="reviews__content">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci pellentesque neque tincidunt tempus tempor porttitor vestibulum. Platea aliquam eleifend sollicitudin id enim, interdum urna rhoncus at. Semper id amet vivamus et.
                     </span>
                 </li>
@@ -448,7 +453,7 @@
                     <div class="reviews__header">
                         <div class="reviews__header__left">
                             <img src="./images/Ellipse 1.png" alt=""/>
-                            <div class="text-content">
+                            <div>
                                 <span class="text-content--bold">Username</span>
                                 <br/>
                                 <span class="text-content--small">Oct. 28, 2020</span>
@@ -470,7 +475,7 @@
                     <div class="reviews__header">
                         <div class="reviews__header__left">
                             <img src="./images/Ellipse 1 (1).png" alt=""/>
-                            <div class="text-content">
+                            <div>
                                 <span class="text-content--bold">Username</span>
                                 <br/>
                                 <span class="text-content--small">Oct. 28, 2020</span>
@@ -484,7 +489,7 @@
                             <img src="./images/Vector (1).png" alt=""/>
                         </div>
                     </div>
-                    <span class="reviews__content text-content">
+                    <span class="reviews__content">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci pellentesque neque tincidunt tempus tempor porttitor vestibulum. Platea aliquam eleifend sollicitudin id enim, interdum urna rhoncus at. Semper id amet vivamus et.
                     </span>
                 </li>
@@ -492,7 +497,7 @@
                     <div class="reviews__header">
                         <div class="reviews__header__left">
                             <img src="./images/Ellipse 1 (1).png" alt=""/>
-                            <div class="text-content">
+                            <div>
                                 <span class="text-content--bold">Username</span>
                                 <br/>
                                 <span class="text-content--small">Oct. 28, 2020</span>
@@ -506,36 +511,37 @@
                             <img src="./images/Vector (1).png" alt=""/>
                         </div>
                     </div>
-                    <span class="reviews__content text-content">
+                    <span class="reviews__content">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci pellentesque neque tincidunt tempus tempor porttitor vestibulum. Platea aliquam eleifend sollicitudin id enim, interdum urna rhoncus at. Semper id amet vivamus et.
                     </span>
                 </li>
             </ul>   
+            <a href="#">Load more</a>
         </div>
-        <div class="may-like main__item">
-            <span class="title-style">You may also like</span>
+        <div class="may-like main__item text-content">
+            <h3 class="text-title">You may also like</h3>
             <ul class="grid-container">
-                <li class="grid-item text-content">
+                <li class="grid-item">
                     <img src="./images/Rectangle 3.png" alt=""/>
-                    <p class="title-style title-style--smaller title-style--gray">Lrem Ipsum Dolor Sit Amit</p>
+                    <p class="text-title text-title--smaller text-title--gray">Lrem Ipsum Dolor Sit Amit</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <p class="text-content--blue">
                         <i class="fas fa-star"></i> 
                         4.5(2)
                     </p>
                 </li>
-                <li class="grid-item text-content">
+                <li class="grid-item">
                     <img src="./images/Rectangle 6.png" alt=""/>
-                    <p class="title-style title-style--smaller title-style--gray">Lrem Ipsum Dolor Sit Amit</p>
+                    <p class="text-title text-title--smaller text-title--gray">Lrem Ipsum Dolor Sit Amit</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <p class="text-content--blue">
                         <i class="fas fa-star"></i> 
                         4.5(2)
                     </p>
                 </li>
-                <li class="grid-item text-content">
+                <li class="grid-item">
                     <img src="./images/Rectangle 7.png" alt=""/>
-                    <p class="title-style title-style--smaller title-style--gray">Lrem Ipsum Dolor Sit Amit</p>
+                    <p class="text-title text-title--smaller text-title--gray">Lrem Ipsum Dolor Sit Amit</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <p class="text-content--blue">
                         <i class="fas fa-star"></i> 
@@ -546,9 +552,9 @@
         </div>
     </main>
     <footer>
-        <div class="footer__first title-style title-style--medium title-style--white link-style link-style--white">
+        <div class="footer__first text-title text-title--medium text-title--white link-style link-style--white">
             <div>
-                <p>Customer Care</p>
+                <h3>Customer Care</h3>
                 <ul>
                     <li>
                         <a href="#">Help Center</a>
@@ -568,7 +574,7 @@
                 </ul>
             </div>
             <div>
-                <p>Wemu</p>
+                <h3>Wemu</h3>
                 <ul>
                     <li>
                         <a href="#">About</a>
@@ -585,7 +591,7 @@
                 </ul>
             </div>
             <div>
-                <p>Lorem Ipsum</p>
+                <h3>Lorem Ipsum</h3>
                 <ul>
                     <li>
                         <a href="#">Lorem Ipsum</a>
@@ -606,8 +612,8 @@
             </div>
             <div>
                 <div>
-                    <p>Follow Us</p>
-                    <div class="reference-icon">
+                    <h3>Follow Us</h3>
+                    <div class="references">
                         <span>
                             <i class="fab fa-facebook-f"></i>
                         </span>
@@ -617,14 +623,11 @@
                         <span>
                             <i class="fab fa-linkedin-in"></i>
                         </span>
-                        <!-- <img src="./images/facebook (1).png" alt=""/> -->
-                        <!-- <img src="./images/instagram (1).png" alt=""/>
-                        <img src="./images/linkedin (1).png" alt=""/> -->
                     </div>
                 </div>
                 <div>
-                    <p>Download On</p>
-                    <div class="download-links">
+                    <h3>Download On</h3>
+                    <div class="downloads">
                         <div>
                             <img src="./images/image 8.png" alt=""/>
                         </div>
