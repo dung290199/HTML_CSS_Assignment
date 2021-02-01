@@ -118,6 +118,12 @@ img { border: none; vertical-align: top; }
     display: flex;
     flex-grow: 1;
 }
+.search-box p {
+    visibility: hidden;
+    position: absolute;
+    top: 13px;
+    left: 100px;
+}
 .search-box i {
     font-size: 30px;
     color: #4A4A4A;
@@ -154,12 +160,15 @@ img { border: none; vertical-align: top; }
 }
 .search-box input {
     border: 1px white solid;
-    font-size: 15px;
+    font-size: 16px;
     border: none;
     border-left: 1px solid rgb(179, 173, 173);
     padding: 0;
     padding-left: 10px;
     margin-left: 10px;
+}
+.search-box input:last-of-type {
+    display: none;
 }
 input:focus {
     outline: none;
@@ -255,6 +264,9 @@ input:focus {
     font-size: 35px;
     flex-grow: 1;
     padding-left: 20px;
+}
+.contact__detail:last-of-type i {
+    padding-left: 15px;
 }
 .contact__detail {
     display: flex;
@@ -480,7 +492,7 @@ footer {
     body { 
         font-family: 'Poppins', sans-serif;
     }
-    
+
     /* Header */
     .logo {
         padding-left: 10px;
@@ -491,11 +503,11 @@ footer {
         left: 10px;
         right: 10px;
     }
-    .search-box input {
-        padding: 0;
+    .search-box input:first-of-type {
+        display: none;
     }
-    .search-box input::placeholder {
-        visibility: hidden;
+    .search-box input:last-of-type {
+        display: flex;
     }
     .search-box i {
         visibility: visible;
@@ -510,23 +522,25 @@ footer {
     /* Infomation */
     .info {
         flex-direction: column;
-        margin-top: 60px;
+        padding: 100px 10px 50px;
     }
     .info div:first-child {
-        padding-left: 10px;
+        padding: 0;
     }
     .info div:last-child {
-        padding-right: 10px;
+        padding: 0;
         padding-top: 10px;
     }
     .info__description {
         visibility: hidden;
     }
-    .info__content__detail::before {
+    .info__description::before {
         content: "Vel non enim in. Nemo sapiente rerum quasi eaque quia non. Et fugiat dolores harum quos voluptas dolorum omnis minus.";
         visibility: visible;
         display: block;
         position: absolute;
+        right: 10px;
+        left: 10px;
     }
     .info__contact {
         margin-top: -50px;
@@ -596,6 +610,7 @@ footer {
         visibility: visible;
         position: absolute;
         line-height: 18px;
+        width: 80%;
     }
 
     /* Reviews */
