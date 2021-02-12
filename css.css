@@ -14,7 +14,7 @@ body {
 ul { list-style: none; }
 
 h3 { 
-    font-size: 19px;
+    font-size: 21px;
     color: #FFFFFF;
 }
 
@@ -24,7 +24,7 @@ img { border: none; vertical-align: top; }
     text-decoration: none;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 30px;
     color: #4A4A4A;
 }
@@ -32,32 +32,32 @@ img { border: none; vertical-align: top; }
     color: #FFFFFF;
 }
 .link-style--big a{
-    font-size: 18px;
+    font-size: 20px;
 }
 .link-style--small a{
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .text-title {
     font-style: normal;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 30px;
     line-height: 41px;
     color: #4A4A4A;
 }
 .text-title--smaller {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 25px;
 }
 .text-title--gray {
     color: #4A4A4A;
 }
 .text-title--small {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 25px;
 }
 .text-title--medium {
-    font-size: 22px;
+    font-size: 24px;
 }
 .text-title--white {
     color: #FFFFFF;
@@ -65,23 +65,25 @@ img { border: none; vertical-align: top; }
 .text-title--blue {
     color: #4D8CF1;
 }
+.text-title--light {
+    font-weight: 600;
+}
 
 .text-content {
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
     color: #666666;
-    letter-spacing: 1px;
 }
 .text-content--big {
-    font-size: 16px;
+    font-size: 18px;
 }
 .text-content--small {
-    font-size: 12px;
+    font-size: 14px;
 }
 .text-content--smaller {
-    font-size: 10px;
+    font-size: 12px;
 }
 .text-content--bold {
     font-weight: 600;
@@ -136,11 +138,12 @@ img { border: none; vertical-align: top; }
     left: 100px;
 }
 .search-box i {
-    font-size: 30px;
+    font-size: 25px;
     color: #4A4A4A;
     visibility: hidden;
-    position: relative;
+    position: absolute;
     top: 10px;
+    right: 10px;
 }
 .search-box__dropdown {
     padding: 7px 10px;
@@ -245,6 +248,7 @@ input:focus {
 }
 .info__title i {
     padding-right: 10px;
+    font-size: 18px;
 }
 .info__description{
     padding: 10px 0;
@@ -272,7 +276,7 @@ input:focus {
     padding-right: 0;
 }
 .contact__detail i {
-    color: black;
+    color: #4A4A4A;
     font-size: 35px;
     flex-grow: 1;
     padding-left: 20px;
@@ -299,6 +303,7 @@ input:focus {
     cursor: pointer;
     padding: 15px 40px;
     margin-top: 30px;
+    font-size: 16px;
 }
 .info__contact button:last-of-type {
     display: none;
@@ -424,12 +429,18 @@ main {
 .may-like .grid-item {
     flex-direction: column;
 }
+.may-like .grid-item i {
+    font-size: 13px;
+    padding-right: 5px;
+}
 .may-like .grid-item > img {
     width: 100%;
     height: auto;
 }
 .may-like .grid-item p {
     padding: 10px 0 0;
+    display: flex;
+    align-items: center;
 }
 
 /* footer */
@@ -508,10 +519,25 @@ footer {
 
     body { 
         font-family: 'Poppins', sans-serif;
+        color: #000000;
     }
 
-    .text-title {
+    h3.text-title:not(.may-like h3) {
+        font-size: 18px;
         color: #000000;
+    }
+    .text-title:not(.contact__account p, h3, .item__header, .may-like .grid-item p.text-title), .may-like h3 {
+        color: #000000;
+        font-size: 24px;
+    }
+    .text-title--medium:not(.contact__account p) {
+        font-size: 18px;
+    }
+    .text-title--small {
+        font-size: 16px;
+    }
+    .link-style--big a {
+        font-size: 16px;
     }
 
     /* Header */
@@ -556,6 +582,10 @@ footer {
     .info__description {
         visibility: hidden;
     }
+    .info__title i {
+        padding: 5px;
+        font-size: 15px;
+    }
     .info__description::before {
         content: "Vel non enim in. Nemo sapiente rerum quasi eaque quia non. Et fugiat dolores harum quos voluptas dolorum omnis minus.";
         visibility: visible;
@@ -563,12 +593,15 @@ footer {
         position: absolute;
         right: 10px;
         left: 10px;
+        font-size: 16px;
     }
     .info__contact {
-        margin-top: -50px;
+        margin-top: -90px;
     }
     .btn-message {
         width: 100%;
+        font-family: 'Poppins' , sans-serif;
+        margin-top: 50px;
     }
 
     /* Main */
@@ -577,6 +610,7 @@ footer {
     }
     .grid-container {
         grid-gap: 0;
+        margin-top: 28px;
     }
     .grid-item {
         height: fit-content;
@@ -587,13 +621,14 @@ footer {
         height: auto;
     }
     .main__item {
-        margin-top: -30px;
+        padding-top: 50px;
     }
     .item__header {
         flex-direction: column;
         margin-bottom: -10px;
         font-size: 16px;
         line-height: 24px;
+        color: #000000;
     }
     .item-content div:nth-child(2) {
         visibility: hidden;
@@ -606,19 +641,33 @@ footer {
         position: absolute;
         line-height: 18px;
         width: auto;
+        font-size: 16px;
     }
 
     /* Reviews */
     .reviews a:last-child {
-        line-height: 70px;
+        position: relative;
+        top: -30px;
+    }
+    .reviews__header__left {
+        max-width: 46px;
+        height: 46px;
+    }
+    .reviews__header__left span:first-child {
+        color: #000000;
+    }
+    .reviews__header__left div {
+        padding-top: 0;
     }
     .reviews__content {
         visibility: hidden;
+        padding: 0;
     }
     .reviews__content::before {
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci pellentesque neque tincidunt tempus tempor porttitor vestibulum.";
         visibility: visible;
         position: absolute;
+        font-size: 16px;
     }
     .reviews .grid-container {
         grid-gap: 0;
@@ -631,6 +680,23 @@ footer {
     /* May like list */
     .may-like .grid-container {
         grid-gap: 10px;
+    }
+    .may-like .grid-item p.text-title {
+        visibility: hidden;
+    }
+    .may-like .grid-item p.text-title::before {
+        content: "Lorem Ipsum";
+        visibility: visible;
+        color: #000000;
+        font-size: 18px;
+    }
+    .may-like .grid-item p.text-content--blue span {
+        visibility: hidden
+    }
+    .may-like .grid-item p.text-content--blue span::before {
+        content: "4.6 (32)";
+        visibility: visible;
+        font-size: 16px;
     }
     
     /* Footer */
@@ -657,6 +723,7 @@ footer {
     .text-title--small {
         font-size: 16px;
     }
+
     .header {
         padding: 10px;
     }
