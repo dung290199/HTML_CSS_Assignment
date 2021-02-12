@@ -647,7 +647,7 @@ footer {
     /* Reviews */
     .reviews a:last-child {
         position: relative;
-        top: -30px;
+        top: -25px;
     }
     .reviews__header__left {
         max-width: 46px;
